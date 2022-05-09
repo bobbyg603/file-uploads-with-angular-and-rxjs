@@ -1,27 +1,44 @@
-# UploadsClient
+# File Uploads with Angular and RxJS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+This is is a companion repo for [File Uploads with Angular and RxJS](https://betterprogramming.pub/file-uploads-with-angular-and-rxjs-34262b3450ae). The article demonstrates how to make a file upload component with the Angular HttpClient, Bootstrap progress bars, and RxJS observables with subscriptions that complete automatically.
 
-## Development server
+![File Uploads With Angular and RxJS](https://user-images.githubusercontent.com/2646053/167491922-66cc1460-1a59-4444-ab5c-7fd4d0dce2c9.gif)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+Clone this repo to your workspace:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+git clone https://github.com/bobbyg603/file-uploads-with-angular-and-rxjs
+```
 
-## Build
+Install the dependencies and start the application:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+cd file-uploads-with-angular-and-rxjs && npm i && npm start
+```
 
-## Running unit tests
+You will also need to clone the companion Express server:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+git clone https://github.com/bobbyg603/upload-server
+```
 
-## Running end-to-end tests
+Install the dependencies and start the server:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```sh
+cd upload-server && npm i && npm start
+```
 
-## Further help
+Use the drag and drop control or click "Browse Files" to select files to upload:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Further Exploration
+
+Want to use this component in a production scenario? Take a look the [upload-client](https://github.com/bobbyg603/upload-client) repo.
+
+![Further Exploration Preview](https://user-images.githubusercontent.com/2646053/167490042-56670fb6-2779-4b67-8bfd-825a7a4e2a83.gif)
+
+The upload client repository takes this example and adds a Navbar, a modal, a loading wheel, error handling, and more! Please also subscribe to me on [Medium](bobbyg603.medium.com), follow me on [Twitter](https://twitter.com/bobbyg603), and subscribe to my [YouTube](https://youtube.com/c/bobbyg603) channel if you have a moment.
+
+Thank you for your support ❤️
