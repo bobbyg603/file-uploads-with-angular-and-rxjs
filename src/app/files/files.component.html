@@ -1,0 +1,21 @@
+<section class="d-flex justify-content-between">
+    <h1>Files</h1>
+</section>
+<hr class="my-2">
+<section>
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let file of files">
+                <td>
+                    <a [href]="file.url">{{file.name}}</a>
+                </td>
+                <td>
+                    {{ file.uploaded | date:'long' }}
+                </td>
+                <td>
+                    {{ file.size / (1024 * 10 * 10 * 10) | number:'.2-2' }} MB
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

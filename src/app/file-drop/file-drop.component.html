@@ -1,0 +1,6 @@
+<ngx-file-drop [multiple]="true" (onFileDrop)="onFilesDropped($event)">
+    <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+        Drag and drop or
+        <button class="p-1 btn btn-link" type="button" (click)="openFileSelector()">Browse Files</button>
+    </ng-template>
+</ngx-file-drop>
