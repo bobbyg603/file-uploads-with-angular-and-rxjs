@@ -7,5 +7,5 @@ import { FilesTableEntry } from './files-table-entry';
   styleUrls: ['./files.component.scss']
 })
 export class FilesComponent {
-  @Input() files?: FilesTableEntry[];
+  @Input() files: FilesTableEntry[] | null = [];
 }
