@@ -7,7 +7,7 @@
 
 This is is a companion repo for [File Uploads with Angular and RxJS](https://betterprogramming.pub/file-uploads-with-angular-and-rxjs-34262b3450ae). The article demonstrates how to make a file upload component with the Angular HttpClient, Bootstrap progress bars, and RxJS observables with subscriptions that complete automatically.
 
-## Getting Started
+## 🐣 Getting Started
 
 Clone this repo to your workspace:
 
@@ -36,7 +36,7 @@ cd upload-server && npm i && npm start
 Use the drag and drop control or click "Browse Files" to select files to upload:
 
 
-## Further Exploration
+## 🧑‍🎓 Further Exploration
 
 Want to use this component in a production scenario? Take a look the [upload-client](https://github.com/bobbyg603/upload-client) repo.
 
