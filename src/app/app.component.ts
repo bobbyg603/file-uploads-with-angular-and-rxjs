@@ -69,7 +69,7 @@ export class AppComponent {
   }
 
   private uploadFile(file: File): Observable<HttpEvent<unknown>> {
-    const url = "http://localhost:8080/upload";
+    const url = 'http://localhost:8080/upload';
     const formData: FormData = new FormData();
     formData.append('file', file, file.name);
 

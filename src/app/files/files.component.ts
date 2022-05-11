@@ -7,5 +7,12 @@ import { FilesTableEntry } from './files-table-entry';
   styleUrls: ['./files.component.scss']
 })
 export class FilesComponent {
-  @Input() files: FilesTableEntry[] | null = [];
+  @Input() files: FilesTableEntry[] | null = [
+    {
+      url: '#',
+      name: 'tiger.png',
+      uploaded: new Date(),
+      size: 123456789
+    }
+  ];
 }
