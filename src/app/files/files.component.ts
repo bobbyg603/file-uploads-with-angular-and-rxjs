@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { FilesTableEntry } from './files-table-entry';
 
 @Component({
   selector: 'app-files',
@@ -6,12 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./files.component.scss']
 })
 export class FilesComponent {
-  @Input() files = [
-    {
-      url: '#',
-      name: 'tiger.png',
-      uploaded: new Date(),
-      size: 123456789
-    }
-  ]
+  @Input() files?: FilesTableEntry[];
 }

@@ -1,7 +1,8 @@
 import { HttpClient, HttpEvent, HttpEventType, HttpUploadProgressEvent } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgxFileDropEntry } from '@bugsplat/ngx-file-drop';
 import { BehaviorSubject, bindCallback, filter, finalize, from, map, mergeMap, Observable, scan, switchMap, takeWhile } from 'rxjs';
+import { FilesTableEntry } from './files/files-table-entry';
 import { FileUploadProgress } from './uploads/file-upload-progress';
 
 @Component({
@@ -9,19 +10,17 @@ import { FileUploadProgress } from './uploads/file-upload-progress';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   
-  files$?: Observable<any>;
+  files$?: Observable<FilesTableEntry[]>;
   uploads$?: Observable<FileUploadProgress[]>;
 
   private getFilesSubject = new BehaviorSubject<any>(null);
 
-  constructor(private httpClient: HttpClient) { }
-
-  ngOnInit(): void {
+  constructor(private httpClient: HttpClient) {
     this.files$ = this.getFilesSubject.asObservable()
       .pipe(
-        switchMap(() => this.httpClient.get('http://localhost:8080/files'))
+        switchMap(() => this.httpClient.get<FilesTableEntry[]>('http://localhost:8080/files'))
       );
   }
 
