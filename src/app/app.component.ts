@@ -84,6 +84,6 @@ export class AppComponent {
   }
 }
 
-function isHttpProgressEvent(input: HttpEvent<any>): input is HttpUploadProgressEvent {
+function isHttpProgressEvent(input: HttpEvent<unknown>): input is HttpUploadProgressEvent {
   return input.type === HttpEventType.UploadProgress;
 }
