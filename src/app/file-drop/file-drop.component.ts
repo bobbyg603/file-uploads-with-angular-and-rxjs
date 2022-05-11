@@ -6,7 +6,7 @@ import { NgxFileDropEntry } from '@bugsplat/ngx-file-drop';
   templateUrl: './file-drop.component.html',
   styleUrls: ['./file-drop.component.scss']
 })
-export class FileDrop {
+export class FileDropComponent {
   @Output() filesDropped = new EventEmitter<NgxFileDropEntry[]>();
 
   onFilesDropped(files: NgxFileDropEntry[]) {
