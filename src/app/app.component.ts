@@ -4,6 +4,7 @@ import { NgxFileDropEntry } from '@bugsplat/ngx-file-drop';
 import { BehaviorSubject, bindCallback, filter, finalize, from, map, mergeMap, Observable, scan, switchMap, takeWhile } from 'rxjs';
 import { FilesTableEntry } from './files/files-table-entry';
 import { FileUploadProgress } from './uploads/file-upload-progress';
+import { v4 as uuid } from 'uuid';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +29,7 @@ export class AppComponent {
     this.uploads$ = from(files)
       .pipe(
         mergeMap(selectedFile => {
-          const id = (Math.random() + 1).toString(36).substring(2);
+          const id = uuid();
           const fileEntry = selectedFile.fileEntry as FileSystemFileEntry;
           const observableFactory = bindCallback(fileEntry.file) as any;
           const file$ = observableFactory.call(fileEntry) as Observable<File>;
