@@ -1,9 +1,9 @@
-# 📂🚀☁️ File Uploads with Angular and RxJS
+## 📂🚀☁️ File Uploads with Angular and RxJS
+
+<img alt="Man Riding Rocket Ship In Space Holding Papers" src="https://github.com/bobbyg603/file-uploads-with-angular-and-rxjs/assets/2646053/b86e1530-78e0-4507-b72e-6b1a036570dd" width="540px" height="auto">
 
 [![medium profile link](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/better-programming/file-uploads-with-angular-and-rxjs-34262b3450ae)
 [![twitter profile link](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/bobbyg603/status/1524465334522195968)
-
-<img alt="File Uploads With Angular and RxJS" src="https://user-images.githubusercontent.com/2646053/167491922-66cc1460-1a59-4444-ab5c-7fd4d0dce2c9.gif" width="540px" height="auto">
 
 This is is a companion repo for [File Uploads with Angular and RxJS](https://betterprogramming.pub/file-uploads-with-angular-and-rxjs-34262b3450ae) that demonstrates how to build a drag and drop file upload control. Topics in this article include the uploading files with Angular HttpClient, using Bootstrap to display progress bars, and leveraging RxJS observables with subscriptions that complete automatically.
 
@@ -33,7 +33,9 @@ Install the dependencies and start the server:
 cd upload-server && npm i && npm start
 ```
 
-Use the drag and drop control or click "Browse Files" to select files to upload:
+Use the drag and drop control or click "Browse Files" to select files to upload.
+
+<img alt="File Uploads With Angular and RxJS" src="https://user-images.githubusercontent.com/2646053/167491922-66cc1460-1a59-4444-ab5c-7fd4d0dce2c9.gif" width="540px" height="auto">
 
 ## 🕵️ Inspecting the Code
 
