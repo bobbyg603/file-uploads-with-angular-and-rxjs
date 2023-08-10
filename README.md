@@ -135,6 +135,13 @@ Want to use this component in a production scenario? Take a look the [upload-cli
 
 <img alt="Further Exploration Preview" src="https://user-images.githubusercontent.com/2646053/167490042-56670fb6-2779-4b67-8bfd-825a7a4e2a83.gif" width="540px" height="auto">
 
-The upload client repository takes this example and adds a Navbar, a modal, a loading wheel, error handling, and more! Please also subscribe to me on [Medium](bobbyg603.medium.com), follow me on [Twitter](https://twitter.com/bobbyg603), and subscribe to my [YouTube](https://youtube.com/c/bobbyg603) channel if you have a moment.
+The upload client repository takes this example and adds a Navbar, a modal, a loading wheel, error handling, and more!
 
-Thank you for your support ❤️
+## 🧑‍💻 Next Steps
+
+If you liked this example, please follow me on [Medium](https://bobbyg603.medium.com/) and [X](https://twitter.com/bobbyg603), where I post programming tutorials and discuss tips and tricks that have helped make me a better programmer.
+
+**Thank you for your support ❤️**
+
+
+
