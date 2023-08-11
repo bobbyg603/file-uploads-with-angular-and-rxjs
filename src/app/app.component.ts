@@ -4,6 +4,7 @@ import { NgxFileDropEntry } from '@bugsplat/ngx-file-drop';
 import { BehaviorSubject, bindCallback, filter, finalize, from, map, mergeMap, Observable, scan, switchMap, takeWhile } from 'rxjs';
 import { FilesTableEntry } from './files/files-table-entry';
 import { FileUploadProgress } from './uploads/file-upload-progress';
+// @ts-ignore StackBlitz uuid types error
 import { v4 as uuid } from 'uuid';
 
 @Component({
